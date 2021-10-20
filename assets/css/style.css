@@ -1,6 +1,7 @@
 :root{
+    --ligh-color:#FFF7F5;
     --primary-color: #F6BD60;
-    --secondary-color: #F7EDE2;
+    --secondary-color: #FFE5E2;
     --tertiary-color: #F5CAC3;
     --base-color: #000814;
 
@@ -22,8 +23,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--secondary-color);
-    padding-left:20px ;
+    background-color: var(--ligh-color);
+    /* padding-left:20px ; */
     padding-right: 40px;
 }
 header h1{
@@ -31,6 +32,8 @@ header h1{
     padding: 20px;
     position: relative;
     z-index: 1;
+    background-color: white;
+    width: 20%;
 }
 header h1::before{
     content: "";
@@ -65,3 +68,25 @@ header nav ul li a{
     color: var(--base-color);
     border-bottom: 3px solid var(--base-color);
 }
+
+.me-section{
+    padding: 0;
+    background-color: var(--ligh-color);
+    /* display: flex; */
+    position: relative;
+    height: 550px;
+}
+.me-section img{
+    box-shadow: -35px -35px 0 var(--tertiary-color);
+    /* border-radius: 100px 0 100px 0 ; */
+    position: absolute;
+    top: 70px;
+    right: 100px;
+
+}
+/* .empty{
+    width: 40%;
+    height: 300px;
+    background-image: url(../images/bg2.jpg);
+    background-size: cover;
+} */
