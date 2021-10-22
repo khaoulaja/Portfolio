@@ -119,11 +119,13 @@ header nav ul li a{
     font-size: 42px;
     text-align: right;
     padding: 0 20px;
-    width: 165px;
+    /* width: 165px; */
+    flex: 1 20%;
 }
 .section-content{
     padding: 15px 50px;
     border-left: 5px solid var(--tertiary-color);
+    flex: 2 80%;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
@@ -131,13 +133,24 @@ header nav ul li a{
 
 .work{
     display: flex;
+    flex-wrap: wrap;
     padding-top: 0;
 }
+
 .project{
     position: relative;
+    flex: 1 40%;
+    margin: 5px;
+    height: 200px;
+    background-image:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582)), url(../images/run-buddy.PNG);
+    background-size: cover;
+    border: 3px solid var(--tertiary-color);
 }
-.project:first-of-type{
-    width: 100%;
+.project:hover{
+    background-image: url(../images/run-buddy.PNG);
+}
+.project:last-of-type{
+    height:300px;
 }
 .project img{
     width: 500px;  
@@ -151,12 +164,14 @@ header nav ul li a{
     background-color: var(--tertiary-color);
     opacity: 0.4;
 }
-.try{
-    height: 500px;
-    width: 500px;
+/* .try{
+    height: 200px;
     background-image:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582)), url(../images/run-buddy.PNG);
     background-size: cover;
-}
+} */
+/* .try:last-of-type{
+    height: 400px;
+} */
 .overlay:hover{
     opacity: 0;
     transition: 1s;
@@ -167,4 +182,7 @@ header nav ul li a{
     bottom: 20px;
     left: 0%;
     background-color: var(--ligh-color);
+}
+.contact-me{
+    display: flex;
 }
