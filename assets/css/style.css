@@ -17,7 +17,7 @@ body{
     color: var(--base-color);
 }
 section{
-    padding: 6.6vw;
+    padding: 60px;
 }
 header{
     display: flex;
@@ -115,8 +115,21 @@ header nav ul li a{
     justify-content: space-around;
     align-items: stretch;
 }
+.about-me .section-content{
+    align-items: flex-end;
+}
+.about-me-pic{
+    width: 250px;
+    height: 350px;
+    /* border-radius: 150px; */
+    object-fit: cover;
+    margin:0 30px;
+}
+.about-me div p{
+    flex: 2 50%;
+}
 .section-title{
-    font-size: 42px;
+    font-size: 52px;
     text-align: right;
     padding: 0 20px;
     /* width: 165px; */
@@ -125,35 +138,38 @@ header nav ul li a{
 .section-content{
     padding: 15px 50px;
     border-left: 5px solid var(--tertiary-color);
-    flex: 2 80%;
     display: flex;
+    flex: 2 80%;
     justify-content: space-around;
     flex-wrap: wrap-reverse;
+    align-items: center;
 }
 
 .work{
     display: flex;
-    flex-wrap: wrap;
     padding-top: 0;
 }
 
 .project{
     position: relative;
-    flex: 1 40%;
+    flex: 1 0 40%;
     margin: 5px;
-    height: 200px;
-    background-image:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582)), url(../images/run-buddy.PNG);
+    height: 231px;
     background-size: cover;
     border: 3px solid var(--tertiary-color);
+    background-image:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582));
+
 }
 .project:hover{
     background-image: url(../images/run-buddy.PNG);
 }
 .project:last-of-type{
-    height:300px;
+    height:400px;
 }
 .project img{
-    width: 500px;  
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
 }
 .overlay{
     position: absolute;
@@ -161,21 +177,14 @@ header nav ul li a{
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--tertiary-color);
-    opacity: 0.4;
+    background:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582));
+    opacity: 1;
 }
-/* .try{
-    height: 200px;
-    background-image:linear-gradient( rgba(115, 93, 120, 0.322), rgba(115, 93, 120, 0.582)), url(../images/run-buddy.PNG);
-    background-size: cover;
-} */
-/* .try:last-of-type{
-    height: 400px;
-} */
 .overlay:hover{
     opacity: 0;
     transition: 1s;
 }
+
 .project-info {
     padding: 7px;
     position: absolute;
@@ -185,4 +194,14 @@ header nav ul li a{
 }
 .contact-me{
     display: flex;
+    align-items: stretch;
+    padding-top: 0;
+}
+.contact a{
+text-decoration: none;
+color: var(--base-color);
+font-weight: bold;
+font-size: 18px;
+padding: 5px;
+border-bottom: 5px solid var(--tertiary-color);
 }
