@@ -4,6 +4,7 @@
 
 * Showcase examples of my work
 * Display accomplishments, skills and potential
+ ![Homepage](assets/images/website-screencapture.png)
 
 ## Built With
 * HTML
