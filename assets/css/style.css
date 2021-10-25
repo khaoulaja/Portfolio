@@ -20,6 +20,7 @@
     section{
         padding: 60px;
     }
+    /* header style */
     header{
         display: flex;
         justify-content: space-between;
@@ -54,20 +55,13 @@
         padding: 50px 0;
         background-image: linear-gradient( rgba(247, 172, 137, 0.377), rgba(255, 183, 116, 0.582)), url(../images/bg3.png);
         background-size: cover;
-        /* background-color: var(--light-color); */
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        /* position: relative; 
-        height: 550px;*/
     }
     .me-section img{
-        /* box-shadow: -35px -35px 0 var(--tertiary-color); */
         border-radius: 384px;
-        /* position: absolute;
-        top: 17px;
-        left: 200px; */
         border: 5px solid var(--tertiary-color);
         padding: 35px;
         width: 480px;
@@ -76,7 +70,6 @@
 
     }
     .info{
-        /* position: absolute; */
         left: 760px;
         top: 200px;
         line-height: 1.4;
@@ -91,7 +84,6 @@
         font-size: 54px;
         font-weight: 500;
     }
-    /* About me section style start */
     .section-title{
         font-size: 3.25vw;
         text-align: right;
@@ -109,6 +101,7 @@
         flex-wrap: wrap-reverse;
         align-items: center;
     }
+    /* about me section style */
     .about-me{
         display: flex;
         justify-content: space-around;
@@ -151,7 +144,7 @@
         font-weight: 500;
     }
     
-
+/* work section style */
     .work{
         display: flex;
         padding-top: 0;
@@ -173,8 +166,6 @@
         height: 231px;
         background-size: cover;
         border: 3px solid var(--tertiary-color);
-        /* background-image:linear-gradient( rgba(102, 121, 138, 0.322), rgba(102, 121, 138, 0.582)); */
-
     }
     .project:hover{
         background-image: url(../images/run-buddy.PNG);
@@ -215,6 +206,7 @@
     .project-info:hover .overlay{
         opacity: 0;
     }
+    /* contact me style */
     .contact-me{
         display: flex;
         align-items: stretch;
@@ -407,6 +399,10 @@
             width: 230px;
             height: 230px;
         }
+        .info{
+            margin: auto;
+            text-align: center;
+        }
         .info h2{
             font-size: 15px;
         }
@@ -422,13 +418,18 @@
         .about-me-pic{
             width: 180px;
             height: 220px;
+            margin-top: 10px;
+        }
+        .about-me .section-content{
+            padding: 10px;
         }
         .about-me div p{
             font-size: 12px;
+            margin-top: 5px;
         }
         .work .section-content{
             /* flex-direction: column; */
-            padding: 10px 0;
+            padding: 15px 0;
         }
         .project-info h3{
             font-size: 12px;
@@ -442,6 +443,7 @@
         }
         .contact-me .section-content{
             flex-wrap: wrap;
+            padding-top: 20px;
         }
         .contact a{
             font-size: 12px;
